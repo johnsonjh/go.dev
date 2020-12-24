@@ -10,9 +10,6 @@
     "home": "https://gitlab.gridfinity.com/go/leaktestfe",
     "dir": "https://gitlab.gridfinity.com/go/leaktestfe/-/tree/master{/dir}",
     "file": "https://gitlab.gridfinity.com/go/leaktestfe/-/blob/master{/dir}/{file}#L{line}"
-   },
-   "website": {
-    "url": "https://go.gridfinity.com/doc/?leaktestfe"
    }
   }
  ]
