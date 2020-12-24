@@ -1,9 +1,8 @@
 image: alpine:latest
-
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - echo 'https://go.gridfinity.dev/'
   artifacts:
     paths:
     - public
