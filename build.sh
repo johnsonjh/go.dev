@@ -80,6 +80,8 @@ find ./public -name '*.html' -print0 \
 printf '%s\n' \
 	"Done"
 
+printf '%s\n' "$(date)" > ./.timestamp && git add ./.timestamp
+
 printf '%s\n' \
 	"Pushing to GitLab..."
 git add -A && git commit -aS -m "Update pages: $(date)" && git push gitlab master && \
