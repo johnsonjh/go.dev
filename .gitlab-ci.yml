@@ -1,10 +1,13 @@
-image: alpine:latest
-pages:
-  stage: deploy
-  script:
-  - echo 'https://go.gridfinity.dev/'
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+pages job:
+    tags:
+    - Linux-x86_64
+    image: alpine:latest
+    pages:
+      stage: deploy
+      script:
+      - echo 'Deploying: https://go.gridfinity.dev/'
+      artifacts:
+        paths:
+        - public
+      only:
+      - master
