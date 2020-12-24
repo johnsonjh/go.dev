@@ -5,10 +5,7 @@
   {
    "type": "git",
    "prefix": "leaktestfe",
-   "url": "https://go.gridfinity.com/src/?leaktestfe",
-   "source": {
-    "home": "https://gitlab.gridfinity.com/go/leaktest"
-   },
+   "url": "https://gitlab.gridfinity.com/go/leaktestfe",
    "website": {
     "url": "https://go.gridfinity.com/doc/?leaktestfe"
    }
