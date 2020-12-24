@@ -3,7 +3,7 @@
  "index": true,
  "repositories": [
   {
-   "type": "git",
+   "type": "mod",
    "prefix": "leaktestfe",
    "url": "https://gitlab.gridfinity.com/go/leaktestfe",
    "website": {
