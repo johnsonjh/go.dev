@@ -141,5 +141,5 @@ printf '%s\n' \
 printf '%s\n' \
 	"Pushing to GitLab..."
 git add -A &&
-	git commit -qaS -m "Update pages: $(date)" && git -q push gitlab master &&
+	git commit -q -aS -m "Update pages: $(date)" && git push -q gitlab master &&
 	printf '%s\n' "OK"
