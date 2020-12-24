@@ -5,11 +5,9 @@
   {
    "type": "git",
    "prefix": "leaktestfe",
-   "url": "https://go.gridfinity.com/src?leaktestfe",
+   "url": "https://go.gridfinity.com/src/?leaktestfe",
    "source": {
-    "home": "https://go.gridfinity.com/src?leaktestfe",
-    "dir": "https://go.gridfinity.com/src?leaktestfe/tree/master{/dir}",
-    "file": "https://go.gridfinity.com/src?leaktestfe/blob/master{/dir}/{file}%23L{line}"
+    "home": "https://gitlab.gridfinity.com/go/leaktest"
    },
    "website": {
     "url": "https://go.gridfinity.com/doc/?leaktestfe"
