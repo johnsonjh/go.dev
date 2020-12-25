@@ -66,6 +66,19 @@
    "website": {
     "url": "https://go.gridfinity.com/doc?goc25519sm"
    }
+  },
+  {
+   "type": "git",
+   "prefix": "randgoart",
+   "url": "https://gitlab.gridfinity.com/go/randgoart",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/randgoart",
+    "dir": "https://gitlab.gridfinity.com/go/randgoart/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/randgoart/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?randgoart"
+   }
   }
  ]
 }
