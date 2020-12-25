@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
-
+#
+###############################################################
+#
+# This is Gridfinity makeweb (Release 202012240A) [GFODLv1]
+#
 ###############################################################
 #
 # The Gridfinity Open Documentation License v1.0 (GFODLv1)
@@ -16,7 +20,7 @@
 #   1. Redistributions of source code must retain the
 #      above copyright notice, this list of conditions,
 # 	   and the following disclaimer, within the first
-#	   ten lines of this file, unmodified.
+#	   ten lines of this file, completely unmodified.
 #
 #   2. Redistributions in compiled form must reproduce
 #      the above copyright notice, this list of conditions,
@@ -38,7 +42,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 ###############################################################
-
+# makeweb 202012240A requires: POSIX sh, semver-tool >=3.2.0,
+# fixjson >=1.1.0, vangen >=20201119, sponge >=20060219,
+# Tidy-HTML5 >=5.7.28, GNU find, GNU xargs, GNU sed, recent Git
+###############################################################
+#
 set -u ||
 	true
 :
@@ -134,27 +142,24 @@ printf '%s ' \
 find ./public -name '*.html' -print0 \
 	2>/dev/null |
 	xargs -0 -L1 -I{} \
-		command -p env sh -c \
+		sh -c \
 		'grep -iav ".*generator.*HTML.*Tidy.*>$" "{}" 2>/dev/null |
 					sed -e "s/<HR>//" |
 						sed -e "s/\"\//\"/" |
 							sed -e "s/display: inline-block;/text-align: center; display: inline-block;/" |
-								sed -e "s/<STYLE>/<STYLE>.center-screen ' \
-		'{ display: flex; flex-direction: column; ' \
-		'justify-content: center; ' \
-		'align-items: center; text-align: center; ' \
-		'min-height: 100vh; }/" |
+								sed -e "s/<STYLE>/<STYLE>\n  .center-screen { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 100vh; }/" |
 									sed -e "s/<DIV class=\"content\">/<DIV class=\"center-screen\">/" |
-										sed -e "s/Home: /<BR>Documentation: /" |
-											sed -e "s/Source: /<BR>Source Code Repository: /" |
-												grep -v "^ \+$" |
-													sponge "{}" 
-														>/dev/null 
-															2>&1' \
-		>/dev/null \
-		2>&1
-printf '%s\n' \
-	"Done" ||
+										sed -e "s/Home: /<SMALL>Docs: /" |
+											sed -e "s/Source: /Repo: /" |
+												sed -e "s/<UL>//" -e "s/<LI>//" -e "s/<\/UL>//" -e "s/<\/LI>/<\/SMALL>/" |
+													grep -v "^ \+$" |
+														tidy --add-meta-charset true -utf8 -w 0 -qiubnm 2>/dev/null |
+															grep -iav ".*generator.*HTML.*Tidy.*>$" 2>/dev/null |
+																sponge "{}" 
+																	>/dev/null 
+																		2>&1' \
+		printf '%s\n' \
+		"Done" ||
 	true
 :
 printf '%s\n' \
@@ -166,9 +171,15 @@ printf '%s\n' \
 	"Preparing commit..." ||
 	true
 :
-git add -A &&
-	git commit -q -aS -m \
-		"Pushing Pages: $(date)" &&
-	git push -q gitlab master &&
-	printf '%s\n' "OK"
-
+git gc --aggressive --prune=now ||
+	true
+:
+SEMVER="$(eval printf '%s' "$(printf "%s" "$(semver-tool bump patch "$(printf '%d.%d.%d' "1" "$(grep '"_cXX": "' ./modules.json | tr -d ',_"cX ' | cut -d ':' -f 2)" "$(cut -d '.' -f 3 ./.patch | cut -d '.' -f 1)")") | sponge ./.patch")"; cat ./.patch)"
+echo $SEMVER
+#git add -A &&
+#	git tag -a "${SEMVER:?}" &&
+#	printf '%s\n' \
+#		"Set new semver tag: ${SEMVER}" &&\
+#	git commit -q -aS -m "Pushing Pages: $(date)" &&
+#	git pushall master &&
+#	printf '%s\n' "Complete."
