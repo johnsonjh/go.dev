@@ -83,14 +83,14 @@
   {
    "type": "git",
    "prefix": "opendnsmyip",
-   "url": "https://gitlab.gridfinity.com/go/opendnsmyip",
+   "url": "https://gitlab.gridfinity.com/go/go-opendns-myip",
    "source": {
-    "home": "https://gitlab.gridfinity.com/go/opendnsmyip",
-    "dir": "https://gitlab.gridfinity.com/go/opendnsmyip/-/tree/master{/dir}",
-    "file": "https://gitlab.gridfinity.com/go/opendnsmyip/-/blob/master{/dir}/{file}#L{line}"
+    "home": "https://gitlab.gridfinity.com/go/go-opendns-myip",
+    "dir": "https://gitlab.gridfinity.com/go/go-opendns-myip/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/go-opendns-myip/-/blob/master{/dir}/{file}#L{line}"
    },
    "website": {
-    "url": "https://go.gridfinity.com/doc?opendnsmyip"
+    "url": "https://go.gridfinity.com/doc?go-opendns-myip"
    }
   }
  ]
