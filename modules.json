@@ -1,5 +1,5 @@
 {
- "_cXX": "3",
+ "_cXX": "4",
  "_c00": "##############################################################",
  "_c01": "#",
  "_c02": "# The Gridfinity Open Documentation License v1.0 (GFODLv1)",
@@ -87,7 +87,7 @@
    "source": {
     "home": "https://gitlab.gridfinity.com/go/opendnsmyip",
     "dir": "https://gitlab.gridfinity.com/go/opendnsmyip/-/tree/master{/dir}",
-    "file": "https://gitlab.gridfinity.com/go/dgoart/-/blob/master{/dir}/{file}#L{line}"
+    "file": "https://gitlab.gridfinity.com/go/opendnsmyip/-/blob/master{/dir}/{file}#L{line}"
    },
    "website": {
     "url": "https://go.gridfinity.com/doc?opendnsmyip"
