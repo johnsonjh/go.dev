@@ -1,5 +1,5 @@
 {
- "_cXX": "1",
+ "_cXX": "2",
  "_c00": "##############################################################",
  "_c01": "#",
  "_c02": "# The Gridfinity Open Documentation License v1.0 (GFODLv1)",
@@ -52,6 +52,19 @@
    },
    "website": {
     "url": "https://go.gridfinity.com/doc?leaktestfe"
+   }
+  },
+  {
+   "type": "git",
+   "prefix": "goc25519sm",
+   "url": "https://gitlab.gridfinity.com/go/goc25519sm",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/goc25519sm",
+    "dir": "https://gitlab.gridfinity.com/go/goc25519sm/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/goc25519sm/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?goc25519sm"
    }
   }
  ]
