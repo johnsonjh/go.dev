@@ -79,6 +79,19 @@
    "website": {
     "url": "https://go.gridfinity.com/doc?randgoart"
    }
+  },
+  {
+   "type": "git",
+   "prefix": "opendnsmyip",
+   "url": "https://gitlab.gridfinity.com/go/opendnsmyip",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/opendnsmyip",
+    "dir": "https://gitlab.gridfinity.com/go/opendnsmyip/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/dgoart/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?opendnsmyip"
+   }
   }
  ]
 }
