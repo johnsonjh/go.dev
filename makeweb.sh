@@ -175,8 +175,8 @@ git gc --aggressive --prune=now ||
 	true
 :
 SEMVER="$(eval printf '%s' "$(printf "%s" "$(semver-tool bump patch "$(printf '%d.%d.%d' "1" "$(grep '"_cXX": "' ./modules.json | tr -d ',_"cX ' | cut -d ':' -f 2)" "$(cut -d '.' -f 3 ./.patch | cut -d '.' -f 1)")") | sponge ./.patch")"; cat ./.patch)"
-git add -A &&
-	git tag -a "${SEMVER:?}" &&
+git add -A && \
+	git tag -s "${SEMVER:?}" -m "v${SEMVER:?} - $(date)" &&
 	printf '%s\n' \
 		"Set new semver tag: ${SEMVER}" &&\
 	git commit -q -aS -m "Pushing Pages: $(date)" &&
