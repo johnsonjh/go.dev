@@ -12,7 +12,6 @@
 [![LocCount](https://img.shields.io/tokei/lines/github/gridfinity/go.gridfinity.dev.svg)](https://github.com/XAMPPRocky/tokei)
 [![GitHubCodeSize](https://img.shields.io/github/languages/code-size/gridfinity/go.gridfinity.dev.svg)](https://github.com/gridfinity/go.gridfinity.dev)
 [![CodacyBadge](https://api.codacy.com/project/badge/Grade/1554a9e30cff45aa80635c1e00dafa9e)](https://app.codacy.com/gh/gridfinity/go.gridfinity.dev)
-[![LgtmAlerts](https://img.shields.io/lgtm/alerts/g/gridfinity/go.gridfinity.dev.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/gridfinity/go.gridfinity.dev-alerts/)
 
 ----------------------
 
