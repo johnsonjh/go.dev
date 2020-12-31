@@ -1,5 +1,5 @@
 {
- "_cXX": "4",
+ "_cXX": "5",
  "_c00": "##############################################################",
  "_c01": "#",
  "_c02": "# The Gridfinity Open Documentation License v1.0 (GFODLv1)",
@@ -91,6 +91,19 @@
    },
    "website": {
     "url": "https://go.gridfinity.com/doc?opendnsmyip"
+   }
+  },
+  {
+   "type": "git",
+   "prefix": "lkcp9",
+   "url": "https://gitlab.gridfinity.com/go/lkcp9",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/lkcp0",
+    "dir": "https://gitlab.gridfinity.com/go/lkcp9/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/lkcp9/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?lkcp9"
    }
   }
  ]
