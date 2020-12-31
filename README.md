@@ -1,6 +1,6 @@
 # go.gridfinity.dev
 
-[go.gridfinity.dev](https://go.gridfinity.dev): Gridfinity's Go modules
+<B>[go.gridfinity.dev](https://go.gridfinity.dev): Gridfinity's Go modules</B>
 
 ----------------------
 
