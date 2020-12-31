@@ -118,6 +118,19 @@
    "website": {
     "url": "https://go.gridfinity.com/doc?gpushover"
    }
+  },
+  {
+   "type": "git",
+   "prefix": "gonuma",
+   "url": "https://gitlab.gridfinity.com/go/gonuma",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/gonuma",
+    "dir": "https://gitlab.gridfinity.com/go/gonuma/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/gonuma/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?gonuma"
+   }
   }
  ]
 }
