@@ -1,5 +1,7 @@
 # go.gridfinity.dev
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92f15b8010c54a19be0e50e7bef5e2be)](https://app.codacy.com/gh/gridfinity/go.gridfinity.dev?utm_source=github.com&utm_medium=referral&utm_content=gridfinity/go.gridfinity.dev&utm_campaign=Badge_Grade)
+
 [go.gridfinity.dev](https://go.gridfinity.dev): Gridfinity's Go modules
 
 ## Availability
