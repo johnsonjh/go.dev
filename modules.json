@@ -1,5 +1,5 @@
 {
- "_cXX": "5",
+ "_cXX": "6",
  "_c00": "##############################################################",
  "_c01": "#",
  "_c02": "# The Gridfinity Open Documentation License v1.0 (GFODLv1)",
@@ -98,12 +98,25 @@
    "prefix": "lkcp9",
    "url": "https://gitlab.gridfinity.com/go/lkcp9",
    "source": {
-    "home": "https://gitlab.gridfinity.com/go/lkcp0",
+    "home": "https://gitlab.gridfinity.com/go/lkcp9",
     "dir": "https://gitlab.gridfinity.com/go/lkcp9/-/tree/master{/dir}",
     "file": "https://gitlab.gridfinity.com/go/lkcp9/-/blob/master{/dir}/{file}#L{line}"
    },
    "website": {
     "url": "https://go.gridfinity.com/doc?lkcp9"
+   }
+  },
+  {
+   "type": "git",
+   "prefix": "gpushover",
+   "url": "https://gitlab.gridfinity.com/go/gpushover",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/gpushover",
+    "dir": "https://gitlab.gridfinity.com/go/gpushover/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/gpushover/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?gpushover"
    }
   }
  ]
