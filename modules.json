@@ -131,6 +131,19 @@
    "website": {
     "url": "https://go.gridfinity.com/doc?gonuma"
    }
+  },
+  {
+   "type": "git",
+   "prefix": "gfpsgo",
+   "url": "https://gitlab.gridfinity.com/go/gfpsgo",
+   "source": {
+    "home": "https://gitlab.gridfinity.com/go/gfpsgo",
+    "dir": "https://gitlab.gridfinity.com/go/gfpsgo/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/gfpsgo/-/blob/master{/dir}/{file}#L{line}"
+   },
+   "website": {
+    "url": "https://go.gridfinity.com/doc?gfpsgo"
+   }
   }
  ]
 }
