@@ -95,15 +95,15 @@
   },
   {
    "type": "git",
-   "prefix": "lkcp9",
-   "url": "https://gitlab.gridfinity.com/go/lkcp9",
+   "prefix": "gfcp",
+   "url": "https://gitlab.gridfinity.com/go/gfcp",
    "source": {
-    "home": "https://gitlab.gridfinity.com/go/lkcp9",
-    "dir": "https://gitlab.gridfinity.com/go/lkcp9/-/tree/master{/dir}",
-    "file": "https://gitlab.gridfinity.com/go/lkcp9/-/blob/master{/dir}/{file}#L{line}"
+    "home": "https://gitlab.gridfinity.com/go/gfcp",
+    "dir": "https://gitlab.gridfinity.com/go/gfcp/-/tree/master{/dir}",
+    "file": "https://gitlab.gridfinity.com/go/gfcp/-/blob/master{/dir}/{file}#L{line}"
    },
    "website": {
-    "url": "https://go.gridfinity.com/doc?lkcp9"
+    "url": "https://go.gridfinity.com/doc?gfcp"
    }
   },
   {
