@@ -2,14 +2,14 @@
 #
 ###############################################################
 #
-# This is Gridfinity makeweb (Release 202012240A) [GFODLv1]
+# This is Gridfinity makeweb (Release 202101030A) [GFODLv1]
 #
 ###############################################################
 #
 # The Gridfinity Open Documentation License v1.0 (GFODLv1)
 #
-# Copyright (c) 2020 Gridfinity, LLC. <admin@gridfinity.com>
-# Copyright (c) 2020 Jeffrey H. Johnson. <jeff@gridfinity.com>
+# Copyright (c) 2021 Gridfinity, LLC. <admin@gridfinity.com>
+# Copyright (c) 2021 Jeffrey H. Johnson. <jeff@gridfinity.com>
 #
 # All Rights Reserved.
 #
@@ -42,7 +42,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 ###############################################################
-# makeweb 202012240A requires: POSIX sh, semver-tool >=3.2.0,
+# makeweb 202101030A requires: POSIX sh, semver-tool >=3.2.0,
 # fixjson >=1.1.0, vangen >=20201119, sponge >=20060219,
 # Tidy-HTML5 >=5.7.28, GNU find, GNU xargs, GNU sed, recent Git
 ###############################################################
@@ -174,7 +174,9 @@ printf '%s\n' \
 git gc --aggressive --prune=now ||
 	true
 :
-SEMVER="$(eval printf '%s' "$(printf "%s" "$(semver-tool bump patch "$(printf '%d.%d.%d' "1" "$(grep '"_cXX": "' ./modules.json | tr -d ',_"cX ' | cut -d ':' -f 2)" "$(cut -d '.' -f 3 ./.patch | cut -d '.' -f 1)")") | sponge ./.patch")"; cat ./.patch)"
+SEMVER="$(eval printf '%s' "$(printf "%s" "$(semver-tool bump patch "$(printf '%d.%d.%d' "1" "$(grep '"_cXX": "' ./modules.json | \
+	tr -d ',_"cX ' | cut -d ':' -f 2)" "$(cut -d '.' -f 3 ./.patch | \
+	cut -d '.' -f 1)")") | sponge ./.patch")"; cat ./.patch)"
 git add -A && \
 	git tag -s "${SEMVER:?}" -m "v${SEMVER:?} - $(date)" &&
 	printf '%s\n' \
@@ -182,3 +184,4 @@ git add -A && \
 	git commit -q -aS -m "Pushing Pages: $(date)" &&
 	git pushall master &&
 	printf '%s\n' "Complete."
+
