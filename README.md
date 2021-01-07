@@ -5,7 +5,6 @@
 ---
 
 [![DocGFODLv1](https://img.shields.io/badge/Documentation%20License-GFODLv1-Blue.svg)](https://gitlab.gridfinity.com/go/go.gridfinity.dev/-/blob/master/LICENSE)
-[![CodacyBadge](https://api.codacy.com/project/badge/Grade/92f15b8010c54a19be0e50e7bef5e2be)](https://app.codacy.com/gh/gridfinity/go.gridfinity.dev)
 [![MadeWithGitLabCI/CD](https://img.shields.io/badge/Made%20With-GitLab%20CI%2FCD-Blue.svg)](https://gitlab.gridfinity.com/)
 [![DeepSource](https://deepsource.io/gh/gridfinity/go.gridfinity.dev.svg/?label=active+issues)](https://deepsource.io/gh/gridfinity/go.gridfinity.dev/?ref=repository-badge)
 [![GitHubTag](https://img.shields.io/github/tag/gridfinity/go.gridfinity.dev.svg)](https://GitHub.com/gridfinity/go.gridfinity.dev.svg/tags/)
