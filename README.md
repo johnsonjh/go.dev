@@ -1,10 +1,10 @@
 # go.dev
 
-----
+---
 
 ## go.dev: Go modules
 
-----
+---
 
 ## Availability
 
@@ -13,10 +13,10 @@
 - [SourceHut](https://sr.ht/~trn/go.gridfinity.dev)
 - [NotABug](https://notabug.org/trn/go.dev)
 
-----
+---
 
 ## Issue Tracking
 
 - [GitHub Issues](https://github.com/johnsonjh/go.dev/issues)
 
-----
+---
