@@ -1,5 +1,7 @@
 # go.dev
 
+Personal backup, useless for most anyone.
+
 ---
 
 ## go.dev: Go modules
